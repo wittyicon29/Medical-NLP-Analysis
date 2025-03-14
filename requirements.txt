@@ -1,8 +1,10 @@
 streamlit
 langchain
 langchain-community
+langchain-google-genai
 torch
 transformers
 sentence-transformers
 medspacy
 python-dotenv
+PyPDF2
