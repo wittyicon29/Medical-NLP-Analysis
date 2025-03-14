@@ -72,6 +72,7 @@ The application will launch in your default browser.
 - Uses **MedSpacy** for clinical entity extraction.
 - **Sentence Transformers** (all-MiniLM-L6-v2) for semantic similarity matching.
 - **BART Large-CNN** for summarization.
+- **The NER can take a long time depending on the transcript length as it is utilizing CPU**.
 
 ### 2️⃣ Sentiment & Intent Analysis
 - **BERT-based model** for text classification.
