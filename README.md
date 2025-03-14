@@ -7,7 +7,7 @@ This application is a **Medical Text Analysis Platform** built with **Streamlit*
 
 ## 🚀 Features
 - **Extracts Medical Entities** (Symptoms, Diagnosis, Treatment, Prognosis) using **NER-BERT, Regex**.
-- **Performs Sentiment & Intent Analysis** using a few shot tuned **Clinical BERT model**.
+- **Performs Sentiment & Intent Analysis** using a few-shot tuned **Clinical BERT model**.
 - **Generates SOAP Notes** (Subjective, Objective, Assessment, Plan) using **Google Gemini**.
 - **Processes text from direct input or PDF files**.
 
@@ -56,7 +56,7 @@ The application will launch in your default browser.
 
 ---
 
-## 🖼️ Sample Output Screenshots
+## 🗀️ Sample Output Screenshots
 (Add images after running the app)
 
 1. **Home Screen:** (Upload PDF / Enter Text)
@@ -83,7 +83,7 @@ The application will launch in your default browser.
 
 ---
 
-## 📜 File Structure
+## 📝 File Structure
 ```
 📂 medical-text-analysis/
 ├── app.py                # Streamlit Application
@@ -103,5 +103,50 @@ The application will launch in your default browser.
 
 ---
 
-## 📄 License
+## 📄 Additional Insights
+
+### **How would you handle ambiguous or missing medical data in the transcript?**
+- Use **rule-based heuristics** to detect missing data (e.g., missing symptoms, partial medications).
+- Leverage **zero-shot/few-shot learning** using **LLMs** to infer missing details based on context.
+- Prompt users to clarify missing information using **interactive querying**.
+
+### **What pre-trained NLP models would you use for medical summarization?**
+- **BART Large-CNN** (for abstractive summarization).
+- **BioBERT / ClinicalBERT** (domain-specific summarization in healthcare).
+- **Pegasus (Google AI)** (state-of-the-art summarization model fine-tuned for medical literature).
+- **T5 (Text-to-Text Transfer Transformer)** (for structured and query-based summarization).
+
+### **How would you fine-tune BERT for medical sentiment detection?**
+- Collect **annotated medical conversations** with labeled sentiment.
+- Use a **pre-trained ClinicalBERT model** and fine-tune it using transfer learning.
+- Apply **data augmentation techniques** (e.g., back translation, paraphrasing) to enrich training data.
+- Train on **balanced datasets** to avoid class imbalances affecting accuracy.
+- Use **weighted loss functions** (e.g., Focal Loss) to handle skewed class distributions.
+
+### **What datasets would you use for training a healthcare-specific sentiment model?**
+- **I2B2 Clinical Notes Dataset** (annotated clinical dialogues).
+- **MIMIC-III / MIMIC-IV** (Medical ICU records with textual notes).
+- **MedDialog** (large dataset of doctor-patient conversations).
+- **PubMed abstracts** (for medical intent classification).
+- **Emory Sentiment Dataset** (for fine-tuning sentiment-based classification).
+
+### **How would you train an NLP model to map medical transcripts into SOAP format?**
+- **Supervised Learning:** Train an NLP model on manually labeled SOAP notes using MIMIC-III.
+- **Few-shot Prompt Engineering:** Use LLMs (like Google Gemini) with structured prompts to auto-generate SOAP sections.
+- **Fine-tune a Transformer-based Model:** Use **T5** or **GPT-3.5/4** with a SOAP-formatted dataset.
+- **Hybrid Approach:** Combine **rule-based systems (regex, heuristics)** with **deep learning** to ensure accuracy.
+
+### **What rule-based or deep-learning techniques would improve the accuracy of SOAP note generation?**
+- **Rule-Based:**
+  - Use **regular expressions** to extract key medical phrases.
+  - Apply **MedSpacy** for domain-specific text preprocessing.
+- **Deep Learning-Based:**
+  - Use **Sequence-to-Sequence models (T5, BART)** for structured generation.
+  - Train **BERT-based extractive models** to identify SOAP components.
+  - Fine-tune **GPT-4 / Gemini** for summarization and structured note formatting.
+
+---
+
+## 📝 License
 MIT License - Free to use and modify.
+
