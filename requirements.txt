@@ -1,0 +1,8 @@
+streamlit
+langchain
+langchain-community
+torch
+transformers
+sentence-transformers
+medspacy
+python-dotenv
