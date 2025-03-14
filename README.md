@@ -57,12 +57,19 @@ The application will launch in your default browser.
 ---
 
 ## 🗀️ Sample Output Screenshots
-(Add images after running the app)
 
 1. **Home Screen:** (Upload PDF / Enter Text)
+   ![Screenshot 2025-03-14 165917](https://github.com/user-attachments/assets/f9c8f55b-8be0-4a82-866e-96ad44505682)
+
 2. **NER Analysis Results:** (Extracted Entities)
+   ![Screenshot 2025-03-14 171941](https://github.com/user-attachments/assets/dda61754-cb81-4b3f-9aff-244e3d1ffbe8)
+
 3. **Sentiment & Intent Analysis:** (BERT-based Results)
+   ![Screenshot 2025-03-14 171121](https://github.com/user-attachments/assets/26d7c10b-7d00-4cdc-89e9-604407ed4df6)
+
 4. **SOAP Notes Output:** (Structured Report)
+   ![Screenshot 2025-03-14 171021](https://github.com/user-attachments/assets/03d6f501-be41-48d8-a998-04430aa9166b)
+
 
 ---
 
