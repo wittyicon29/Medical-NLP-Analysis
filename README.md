@@ -1,4 +1,4 @@
-# Medical Text Analysis Platform
+# MediScribe AI
 
 ## 📌 Overview
 This application is a **Medical Text Analysis Platform** built with **Streamlit**, **LangChain**, and **Google Gemini**. It processes medical conversation transcripts, extracts key information, and generates structured reports using **Named Entity Recognition (NER)**, **Sentiment & Intent Analysis**, and **SOAP Notes generation**.
